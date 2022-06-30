@@ -265,10 +265,19 @@ color:white !important;
 .modal-container{
     background-color: white;
     width: 900px;
+    max-width: calc(100%-42px);
     min-height: 200px;
+    position: relative;
 }
 .modal-close{
-
+position: absolute;
+right: 0;
+color:#fff;
+padding: 10px;
+}
+.modal-close:hover{
+    opacity: 5;
+    background-color: red;
 }
 .modal-header{
     background-color: #009688;
@@ -282,6 +291,21 @@ color:white !important;
     margin-left: 16px;
 }
 .modal-body{
+    padding: 16px;
+
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
 
 }
 .modal-label{
@@ -290,10 +314,23 @@ color:white !important;
 .modal-input{
 
 }
-.modal-label{
+#pay-tickets{
+    width: 100%;
+    padding: 20px;
+    background-color: #009688;
+    color:#fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
 
 }
-.modal-input{
-
+#pay-tickets:hover{
+    opacity: 1.9;
+}
+.modal-footer{
+    padding: 15px;
+}
+.modal-help{
+    text-align: right;
 }
 #footer {}
